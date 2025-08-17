@@ -51,17 +51,15 @@ function HomePage() {
         <div className="hero-image-container">
           <img 
             src="./images/reference_image.png" 
-            alt="More Than Friends - A Fictional Love Story" 
+            alt="Closer Than Before - A Fictional Tale of Love Emerging from Friendship" 
             className="hero-image"
           />
         </div>
         <div className="hero-content">
-          <h1 className="main-title">More Than Friends</h1>
-          <p className="subtitle">A Fictional Story of Connection and Becoming More</p>
+          <h1 className="main-title">Closer Than Before</h1>
+          <p className="subtitle">A Fictional Tale of Love Emerging from Friendship</p>
           <p className="story-description">
-            Follow two characters as they discover how friendship can evolve into something unexpected, 
-            captured in tender moments that grow into love. This is a work of fiction. Any resemblance 
-            to actual persons, living or dead, is purely coincidental.
+            In moments both tender and unspoken, two friends find themselves changed forever.
           </p>
         </div>
       </div>
@@ -147,6 +145,13 @@ function HomePage() {
             <button className="epilogue-card-button">Read Epilogue</button>
           </div>
         </div>
+      </div>
+
+      <div className="homepage-footer">
+        <div className="footer-divider">⸻</div>
+        <p className="footer-disclaimer">
+          This is a work of fiction. Any resemblance to actual persons, living or dead, is purely coincidental.
+        </p>
       </div>
 
       <SpotifyPlayer currentAct={1} />

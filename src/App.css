@@ -892,3 +892,26 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Homepage Footer */
+.homepage-footer {
+  text-align: center;
+  padding: 3rem 2rem 2rem;
+  margin-top: 3rem;
+}
+
+.footer-divider {
+  font-size: 1.5rem;
+  color: #999;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.2em;
+}
+
+.footer-disclaimer {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
