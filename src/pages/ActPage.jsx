@@ -147,7 +147,7 @@ function ActPage() {
           </div>
         </div>
       </div>
-      <SpotifyPlayer currentAct={actNum} />
+      <SpotifyPlayer currentAct={actNum} isActPage={true} />
     </div>
   );
 }

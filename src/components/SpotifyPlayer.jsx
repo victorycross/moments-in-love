@@ -3,7 +3,7 @@ import { Play, Pause, Volume2, VolumeX, Minimize2, Maximize2 } from 'lucide-reac
 import { Button } from '@/components/ui/button.jsx'
 import { Card, CardContent } from '@/components/ui/card.jsx'
 
-const SpotifyPlayer = ({ currentAct = 1 }) => {
+const SpotifyPlayer = ({ currentAct = 1, isActPage = false }) => {
   const [isMinimized, setIsMinimized] = useState(false)
   const [showPlayer, setShowPlayer] = useState(true)
 
@@ -35,7 +35,7 @@ const SpotifyPlayer = ({ currentAct = 1 }) => {
 
   if (!showPlayer) {
     return (
-      <div className="fixed bottom-4 left-4 z-50">
+      <div className={`fixed z-50 ${isActPage ? 'top-4 right-4' : 'bottom-4 left-4'}`}>
         <Button
           onClick={() => setShowPlayer(true)}
           className="bg-green-600 hover:bg-green-700 text-white rounded-full p-3 shadow-lg"
@@ -49,7 +49,7 @@ const SpotifyPlayer = ({ currentAct = 1 }) => {
 
   if (isMinimized) {
     return (
-      <div className="fixed bottom-4 left-4 z-40">
+      <div className={`fixed z-40 ${isActPage ? 'top-4 right-4' : 'bottom-4 left-4'}`}>
         <Card className="bg-black/90 backdrop-blur-sm border-green-600/50 shadow-xl">
           <CardContent className="p-3">
             <div className="flex items-center gap-3">
@@ -86,7 +86,7 @@ const SpotifyPlayer = ({ currentAct = 1 }) => {
   }
 
   return (
-    <div className="fixed bottom-4 left-4 z-40 max-w-sm">
+    <div className={`fixed z-40 max-w-sm ${isActPage ? 'top-4 right-4' : 'bottom-4 left-4'}`}>
       <Card className="bg-black/90 backdrop-blur-sm border-green-600/50 shadow-xl">
         <CardContent className="p-4">
           <div className="flex items-center justify-between mb-3">
