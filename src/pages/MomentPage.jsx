@@ -142,7 +142,7 @@ function MomentPage() {
                 {(currentMoment.text || currentMoment.content).split('\n').map((paragraph, index) => (
                   <span key={index}>
                     {paragraph}
-                    {index < (currentMoment.text || currentMoment.content).split('\n').length - 1 && <><br /><br /></>}
+                    {index < (currentMoment.text || currentMoment.content).split('\n').length - 1 && <><br /></>}
                   </span>
                 ))}
               </p>
