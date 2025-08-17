@@ -125,7 +125,7 @@ function MomentPage() {
         <div className="moment-content">
           <div className="moment-image-container">
             <img 
-              src={`/images/${currentMoment.image}`} 
+              src={`./images/${currentMoment.image}`} 
               alt={currentMoment.title}
               className="moment-image"
             />

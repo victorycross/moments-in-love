@@ -120,7 +120,7 @@ function ActPage() {
             >
               <div className="moment-card-image">
                 <img 
-                  src={`/images/${moment.image}`} 
+                  src={`./images/${moment.image}`} 
                   alt={moment.title}
                 />
               </div>

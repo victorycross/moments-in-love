@@ -50,7 +50,7 @@ function HomePage() {
       <div className="hero-section">
         <div className="hero-image-container">
           <img 
-            src="/images/reference_image.png" 
+            src="./images/reference_image.png" 
             alt="More Than Friends - A Fictional Love Story" 
             className="hero-image"
           />

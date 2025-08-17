@@ -23,7 +23,7 @@ function EpiloguePage() {
         <div className="epilogue-content">
           <div className="epilogue-image-container">
             <img 
-              src="/images/reference_image.png" 
+              src="./images/reference_image.png" 
               alt="Brian and Rose - Morning Light"
               className="epilogue-image"
             />
