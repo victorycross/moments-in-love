@@ -35,7 +35,10 @@ const SpotifyPlayer = ({ currentAct = 1, isActPage = false }) => {
 
   if (!showPlayer) {
     return (
-      <div className={`fixed z-50 ${isActPage ? 'top-4 right-4' : 'bottom-4 left-4'}`}>
+      <div 
+        className="fixed z-50"
+        style={isActPage ? { top: '1rem', right: '1rem' } : { bottom: '1rem', left: '1rem' }}
+      >
         <Button
           onClick={() => setShowPlayer(true)}
           className="bg-green-600 hover:bg-green-700 text-white rounded-full p-3 shadow-lg"
@@ -49,7 +52,10 @@ const SpotifyPlayer = ({ currentAct = 1, isActPage = false }) => {
 
   if (isMinimized) {
     return (
-      <div className={`fixed z-40 ${isActPage ? 'top-4 right-4' : 'bottom-4 left-4'}`}>
+      <div 
+        className="fixed z-40"
+        style={isActPage ? { top: '1rem', right: '1rem' } : { bottom: '1rem', left: '1rem' }}
+      >
         <Card className="bg-black/90 backdrop-blur-sm border-green-600/50 shadow-xl">
           <CardContent className="p-3">
             <div className="flex items-center gap-3">
@@ -86,7 +92,10 @@ const SpotifyPlayer = ({ currentAct = 1, isActPage = false }) => {
   }
 
   return (
-    <div className={`fixed z-40 max-w-sm ${isActPage ? 'top-4 right-4' : 'bottom-4 left-4'}`}>
+    <div 
+      className="fixed z-40 max-w-sm"
+      style={isActPage ? { top: '1rem', right: '1rem' } : { bottom: '1rem', left: '1rem' }}
+    >
       <Card className="bg-black/90 backdrop-blur-sm border-green-600/50 shadow-xl">
         <CardContent className="p-4">
           <div className="flex items-center justify-between mb-3">
