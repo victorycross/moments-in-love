@@ -11,6 +11,11 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: '/moments-in-love/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  },
   server: {
     host: '0.0.0.0',
     port: 5173,
