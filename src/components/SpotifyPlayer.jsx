@@ -6,6 +6,8 @@ import { Card, CardContent } from '@/components/ui/card.jsx'
 const SpotifyPlayer = ({ currentAct = 1, isActPage = false }) => {
   const [isMinimized, setIsMinimized] = useState(false)
   const [showPlayer, setShowPlayer] = useState(true)
+  
+  // Force cache refresh - deployment timestamp
 
   // Track configurations for different acts
   const actTracks = {
